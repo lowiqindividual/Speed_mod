@@ -25,6 +25,7 @@ using Assets.Scripts.Utils;
 using static NKHook6.Api.Events._TimeManager.TimeManagerEvents;
 using Il2CppSystem.Collections;
 using NKHook6.Api.Events._Bloons;
+using NKHook6.Api.Events._Weapons;
 
 namespace speedhackmelon
 {
@@ -32,6 +33,7 @@ namespace speedhackmelon
     {
 
         public static int speed = 3;
+        public static bool hypersonic = false;
 
         public override void OnApplicationStart()
         {
@@ -48,6 +50,14 @@ namespace speedhackmelon
 
         }
 
+        [EventAttribute("WeaponCreatedEvent")]
+        public static void WeaponCreatedEvent(WeaponEvents.CreatedEvent e)
+        {
+            Logger.Log("WeaponCreatedEvent");
+            if(hypersonic)
+                e.instance.weaponModel.rate = 0;
+        }
+
 
 
         [EventAttribute("KeyPressEvent")]
@@ -56,6 +66,11 @@ namespace speedhackmelon
 
             string key = e.key + "";
 
+            if (key == "Alpha5")
+            {
+                hypersonic = true;
+                Logger.Log("hypersonic on");
+            }
             if (key == "Alpha6")
             {
                 speed = 3;
