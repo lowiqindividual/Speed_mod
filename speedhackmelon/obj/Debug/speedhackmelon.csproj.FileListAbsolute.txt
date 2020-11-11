@@ -4,3 +4,9 @@ C:\Users\Timothe\Desktop\speedhackmelon\obj\Debug\speedhackmelon.dll
 C:\Users\Timothe\Desktop\speedhackmelon\obj\Debug\speedhackmelon.pdb
 C:\Users\Timothe\Desktop\speedhackmelon\speedhackmelon.dll
 C:\Users\Timothe\Desktop\speedhackmelon\speedhackmelon.pdb
+C:\Users\Timothe\Documents\GitHub\Speed_mod\speedhackmelon\obj\Debug\speedhackmelon.csprojAssemblyReference.cache
+C:\Users\Timothe\Documents\GitHub\Speed_mod\speedhackmelon\obj\Debug\speedhackmelon.csproj.CoreCompileInputs.cache
+C:\Users\Timothe\Documents\GitHub\Speed_mod\speedhackmelon\obj\Debug\speedhackmelon.dll
+C:\Users\Timothe\Documents\GitHub\Speed_mod\speedhackmelon\obj\Debug\speedhackmelon.pdb
+C:\Users\Timothe\Documents\GitHub\Speed_mod\speedhackmelon\speedhackmelon.dll
+C:\Users\Timothe\Documents\GitHub\Speed_mod\speedhackmelon\speedhackmelon.pdb

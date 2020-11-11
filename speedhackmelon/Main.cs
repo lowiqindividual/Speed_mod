@@ -11,10 +11,9 @@ using Assets.Scripts.Unity.UI_New.Main;
 using NKHook6.Api.Events;
 using Assets.Scripts.Simulation.Bloons;
 using Assets.Scripts.Models.Towers;
-using NKHook6.Api.Utilities;
+
 using Assets.Scripts.Unity;
 
-using NKHook6.Api.Enums;
 
 using static NKHook6.Api.Events._Towers.TowerEvents;
 using Assets.Scripts.Simulation.Towers;
@@ -38,7 +37,7 @@ namespace speedhackmelon
         public override void OnApplicationStart()
         {
             base.OnApplicationStart();
-            EventRegistry.subscriber.register(this.GetType());
+            EventRegistry.instance.listen(typeof(Main));
             Logger.Log("speed mod loaded");
         }
 
@@ -67,8 +66,8 @@ namespace speedhackmelon
 
             if (key == "Alpha5")
             {
-                hypersonic = true;
-                Logger.Log("hypersonic on");
+                hypersonic = !hypersonic;
+                Logger.Log("hypersonic: " + hypersonic);
             }
             if (key == "Alpha6")
             {
