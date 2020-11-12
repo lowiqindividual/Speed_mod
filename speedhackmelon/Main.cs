@@ -64,11 +64,11 @@ namespace speedhackmelon
 
             string key = e.key + "";
 
-            if (key == "Alpha5")
-            {
-                hypersonic = !hypersonic;
-                Logger.Log("hypersonic: " + hypersonic);
-            }
+            //if (key == "Alpha5")
+            //{
+            //    hypersonic = !hypersonic;
+            //    Logger.Log("hypersonic: " + hypersonic);
+            //}
             if (key == "Alpha6")
             {
                 speed = 3;
