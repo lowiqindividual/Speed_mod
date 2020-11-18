@@ -86,8 +86,8 @@ namespace speedhackmelon
             }
             if (key == "Alpha9")
             {
-                speed = 100;
-                Logger.Log("speed = 100");
+                speed = 5;
+                Logger.Log("speed = 5");
             }
 
 
